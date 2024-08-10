@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('background.png') no-repeat center center fixed; /* Adjust to your background image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent body overflow */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 100%;
+    max-height: 80vh; /* Set a max height to prevent overflow */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subject {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.subject label {
+    color: #555;
+    text-align: left;
+    font-size: 14px;
+    flex-basis: 25%;
+}
+
+.subject input[type="text"],
+.subject input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.subject input[type="text"] {
+    flex-basis: 45%;
+}
+
+.subject input[type="number"] {
+    flex-basis: 25%;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 20px;
+}
+
+#sgpa-form {
+    margin-top: 20px;
+}
+
+#num-subjects {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#subject-form button {
+    margin-top: 10px;
+}
